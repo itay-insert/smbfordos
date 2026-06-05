@@ -6,9 +6,13 @@ nasm -f bin mario.asm -o mario.COM
 then run it in dosbox 0.74 or dosbox-x (0.74 reccommended for best performance)
 if you don't have nasm... install it, also
 make sure your emulator supports:
+
 vga mode 13h 320x200x8
+
 the pit timer
+
 a ps/2 keyboard
+
 soundblaster
 
 the game can't work without those!
