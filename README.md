@@ -1,6 +1,12 @@
 # smbfordos
 it's super mario bros for the ms-dos opreating system!
 
+## Important notes
+This game is not meant for profit nor does it endorse piracy
+to play the game you will eventually have to provide your
+own legally obtained nes rom, endorsing piracy would be a
+strict violation of copyright laws.
+
 ## gameplay
 so far the game includes walking, running and jumping, as well
 as basic scrolling and level data, hold the arrow keys to walk,
@@ -39,7 +45,12 @@ if needed, once you done it, you should see a file named "mario.COM" that is the
 dos executable, you should also see an audio file, the audio file and the executable
 must be in the same folder, else the game would refuse to run and would exit back
 to the dos terminal, once you got the executable and the audio files in the same
-folder you should be able to run it in an emulator or a real machine if you got one.
+folder you need to provide your own legally obtained rom of the game, name it "smb.nes"
+and put in that folder, without a valid rom of the original super mario bros, the executable
+won't be able to run, once you provided your rom to that folder you should be able to run the
+game in an emulator or a real machine if you got one.
+
+
 
 
 ## Building from the assembly file

@@ -155,6 +155,35 @@ int 21h
 pop ds
 pop es
 
+sti
+
+call check_rom
+
+call close_file
+
+call reset_song
+
+mov ah, 3fh
+mov bx, [file_handle]
+mov cx, 4096
+mov dx, bufferA
+int 21h
+mov ax, bufferA
+mov [active_buffer], ax
+
+
+
+mov ah, 3fh
+mov bx, [file_handle]
+mov cx, 4096
+mov dx, bufferB
+int 21h
+mov ax, bufferB
+mov [next_buffer], ax
+mov byte [copy_flag], 1
+
+cli
+
 push es
 mov ax, 0x3508
 int 21h
@@ -190,26 +219,6 @@ and al, 01111111b
 out 0x21, al
 sti
 
-call reset_song
-
-mov ah, 3fh
-mov bx, [file_handle]
-mov cx, 4096
-mov dx, bufferA
-int 21h
-mov ax, bufferA
-mov [active_buffer], ax
-
-
-
-mov ah, 3fh
-mov bx, [file_handle]
-mov cx, 4096
-mov dx, bufferB
-int 21h
-mov ax, bufferB
-mov [next_buffer], ax
-mov byte [copy_flag], 1
 
 call reset_sb
 
@@ -383,6 +392,14 @@ mov dx, 44
 int 21h
 ret
 
+check_rom:
+mov ah, 3dh
+mov al, 0
+lea dx, [romname]
+int 21h
+jc open_failed
+mov [file_handle], ax
+jmp open_success
 
 sb_write_byte:
 push dx
@@ -887,7 +904,9 @@ mov bx, 8
 sub bx, word [scroll_r]
 sub word [vga_address], bx
 add word [vga_address], 320
-loop main_vga_render
+dec cx
+cmp cx, 0
+jne main_vga_render
 cx_should_not_be_zero1:
 pop di
 pop si
@@ -928,6 +947,8 @@ next_buffer dw bufferB
 current_chunk dw 0
 
 filename db 'Ground.wav', 0
+
+romname db 'smb.nes', 0
 
 trans_flag db 0
 
