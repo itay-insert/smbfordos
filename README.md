@@ -1,4 +1,10 @@
 # smbfordos
+it's super mario bros for the ms-dos opreating system!
+
+
+
+
+
 the source code is in the assembly file "mario.asm", to run it, assemble with:
 
 nasm -f bin mario.asm -o mario.COM
@@ -24,7 +30,7 @@ also don't forget to bring your own legally obtained audio files (Ground.wav), a
 from a rom or something the game would throw an error code and bring you back to dos without those!
 
 note for dosbox-x/vm users:
-specificallly in dosbox-x and the vm... soundblaster driver won't work properly
+specificallly in dosbox-x and the vm, soundblaster driver won't work properly
 and i am not going to fix it anytime soon, so if you want mario music that badly
 make sure to open rayman at least once before you open this game... because this
 fixes the soundblaster for whatever reason (rayman really is a magical game)...
