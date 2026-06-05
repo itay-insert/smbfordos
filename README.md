@@ -65,15 +65,19 @@ nasm -v
 
 ### Installing NASM on Linux
 To install NASM on linux, open the terminal and run the following commands:
+
 sudo apt update
 sudo apt install nasm
 
 then verify with:
+
 nasm -v
 
 ### Installing NASM on macOS (Homebrew)
 To Install NASM, run the following command:
+
 brew install nasm
 
 then verify with:
+
 nasm -v
