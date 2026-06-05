@@ -67,6 +67,7 @@ nasm -v
 To install NASM on linux, open the terminal and run the following commands:
 
 sudo apt update
+
 sudo apt install nasm
 
 then verify with:
