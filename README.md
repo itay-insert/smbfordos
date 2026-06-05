@@ -44,7 +44,9 @@ soundblaster
 
 
 the game can't work without those!
+
 reccomended dosbox speed for guarranteed best performance: 45000 cycles+
+
 reccomended cpu for best peformance: pentium 90mhz+
 
 also don't forget to bring your own legally obtained audio files (Ground.wav), at 8-bit pcm
