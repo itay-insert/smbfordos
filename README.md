@@ -1,8 +1,9 @@
 # smbfordos
-it's super mario bros for the ms-dos opreating system!
+it's super mario bros for the 16-bit MS-DOS opreating system!
 
 ## Important notes
-This game is not meant for profit nor does it endorse piracy
+This game was developed entirely in bare metal x86 assembly
+and it is not meant for profit nor does it endorse piracy
 to play the game you will eventually have to provide your
 own legally obtained nes rom, endorsing piracy would be a
 strict violation of copyright laws.
