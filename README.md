@@ -18,7 +18,7 @@ following:
 
 - vga graphics mode 13h support
 
-- a ps/2
+- a ps/2 keyboard
 
 - the PIT timer
 
