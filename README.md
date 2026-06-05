@@ -5,13 +5,33 @@ it's super mario bros for the ms-dos opreating system!
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 the source code is in the assembly file "mario.asm", to run it, assemble with:
 
+
+
+
 nasm -f bin mario.asm -o mario.COM
+
+
+
+
 
 then run it in dosbox 0.74 or dosbox-x (0.74 reccommended for best performance)
 if you don't have nasm... install it, also
 make sure your emulator supports:
+
+
 
 vga mode 13h 320x200x8
 
@@ -21,8 +41,9 @@ a ps/2 keyboard
 
 soundblaster
 
-the game can't work without those!
 
+
+the game can't work without those!
 reccomended dosbox speed for guarranteed best performance: 45000 cycles+
 reccomended cpu for best peformance: pentium 90mhz+
 
